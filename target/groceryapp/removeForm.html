@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Item Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>Remove Item</h1>
+    <form action="/groceryapp/RemoveItemFromDatabaseServlet" method="post">
+        <div class="mb-3">
+            <label for="itemName" class="form-label">Item Name</label>
+            <input type="text" class="form-control" id="itemName" name="itemName" required>
+        </div>
+        <div class="mb-3">
+            <label for="itemPrice" class="form-label">Item Price</label>
+            <input type="number" step="0.01" class="form-control" id="itemPrice" name="itemPrice" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Remove Item</button>
+    </form>
+    <div class="mt-3">
+        <p>If you don't know the item's price, you can <a href="update.jsp">go back to the admin page</a>.</p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

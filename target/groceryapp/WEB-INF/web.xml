@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Servlet mapping -->
+    
+
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.groceryapp.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet1</servlet-name>
+        <servlet-class>com.groceryapp.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet1</servlet-name>
+        <url-pattern>/update.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateItemServlet</servlet-name>
+        <servlet-class>com.groceryapp.UpdateItemServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RemoveItemServlet</servlet-name>
+        <servlet-class>com.groceryapp.RemoveItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveItemServlet</servlet-name>
+        <url-pattern>/removeItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateItemServlet</servlet-name>
+        <url-pattern>/updateItem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.groceryapp.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.groceryapp.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.groceryapp.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServletViaEmail</servlet-name>
+        <servlet-class>com.groceryapp.LoginServletViaEmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServletViaEmail</servlet-name>
+        <url-pattern>/LoginServletViaEmail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServletViaPhoneno</servlet-name>
+        <servlet-class>com.groceryapp.LoginServletViaPhoneno</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServletViaPhoneno</servlet-name>
+        <url-pattern>/LoginServletViaPhoneno</url-pattern>
+    </servlet-mapping>
+
+
+ <filter>
+        <filter-name>AdminAuthFilter</filter-name>
+        <filter-class>com.groceryapp.AdminAuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminAuthFilter</filter-name>
+        <url-pattern>/admin.html</url-pattern>
+    </filter-mapping>
+
+
+
+    <servlet>
+        <servlet-name>AdminLogoutServlet</servlet-name>
+        <servlet-class>com.groceryapp.AdminLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLogoutServlet</servlet-name>
+        <url-pattern>/AdminLogoutServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Welcome file list -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

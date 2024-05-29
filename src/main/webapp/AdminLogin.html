@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+       
+        .login-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="login-form">
+        <h2 style="margin-bottom: 20px; color: #333;">Admin Account</h2>
+        <div style="margin-bottom: 10px;">
+            <a href="AdminLoginViaPhoneno.html" style="text-decoration: none; color: #007bff;">Phone</a> |
+            <a href="AdminLoginViaEmail.html" style="text-decoration: none; color: #007bff;">Email</a>
+        </div>
+        <form action="/groceryapp/AdminLoginServlet" method="post" style="display: flex; flex-direction: column;background-color:#fff;">
+            <input type="text" name="username" placeholder="Username" required style="margin-bottom: 10px; padding: 8px; font-size: 16px;">
+            <input type="password" name="password" placeholder="Password" required style="margin-bottom: 10px; padding: 8px; font-size: 16px;">
+            <input type="submit" value="Login" style="padding: 10px; font-size: 16px; cursor: pointer; background-color: #007bff;">
+        </form>
+        <div>
+            <a href="AdminRegister.html" style="text-decoration: none; color: #007bff;">Register</a> |
+            <a href="UserForgetPassword.html" style="text-decoration: none; color: #007bff;">Forgot Password?</a>
+        </div>
+    </div>
+
+</body>
+</html>
